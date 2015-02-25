@@ -23,8 +23,8 @@ def add_cwd_segment():
 
     if not powerline.args.cwd_only:
         for n in names[:-1]:
-	    if len(n) > 5:
-		n = n[0:5] + u'\u2026'
+	    if len(n) > 3:
+		n = n[0:3] + u'\u2026'
             if n == '~' and Color.HOME_SPECIAL_DISPLAY:
                 powerline.append(' %s ' % n, Color.HOME_FG, Color.HOME_BG)
             else:
